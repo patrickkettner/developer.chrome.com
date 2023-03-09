@@ -2,7 +2,7 @@
 layout: "layouts/doc-post.njk"
 title: Best Practices
 date: 2017-08-30
-updated: 2021-12-06
+updated: 2022-03-01
 description: >
   Best practices on how to implement your extension and list it in the Chrome Web Store.
 ---
@@ -15,29 +15,27 @@ matures and we learn from developers' experiences, these recommendations will be
 We encourage you to develop extensions that are of high quality. High-quality extensions conform to
 standards of performance, security, and user experience, as summarized by the following guidelines:
 
-* **Compliance:** Does the extension comply with our [program policies][program policies]?
+1 **Compliance:** Does the extension comply with our [program policies][program-policies/best-practices]?
   Extensions must not violate any of these policies.
 
-* **Manifest V3:** Is the extension built on Manifest V3? Manifest V3 is the current version of the
+2 **Manifest V3:** Is the extension built on Manifest V3? Manifest V3 is the current version of the
   Chrome extension platform and all High Quality extensions should use it. (See the [Manifest V3
   overview][mv3-overview].)
 
-* **Security:** Is the extension safe for users? Make sure your extension does not pose security
+3 **Security:** Is the extension safe for users? Make sure your extension does not pose security
   threats and does not use deceptive installation tactics (see [Stay secure][stay-secure] for a more
   in-depth discussion.)
 
-* **User privacy:** Make sure that your extension handles user data appropriately and conforms to
-  Chrome Web Store's data privacy requirements. (See this [FAQ][user-data-faq] for further details.)
+4 **User privacy:** Make sure that your extension handles user data appropriately and conforms to
+  Chrome Web Store's [data privacy requirements][user-data-faq].
 
-* **Performance:** Does the extension function at an outstanding level? High-quality extensions
-  don't just perform their intended action, they do so while using as few system resources as
-  possible.
+5 **Performance:** Does the extension function at an outstanding level? High-quality extensions
+  don't just work, they work while using as few system resources as possible.
 
-* **User experience:** Is the extension a joy to use? The extension itself should provide a
-  good-looking, intuitive, and seamless user experience while also respecting the end user's
-  privacy.
+6 **User experience:** Is the extension a joy to use? The extension itself should provide a
+  good-looking, intuitive, and seamless user experience.
 
-* **Store listing:** The extension's [Chrome Web Store listing][completing-listing] should set the
+7 **Store listing:** The extension's [Chrome Web Store listing][completing-listing] should set the
   user's expectations and clearly communicate what the extension does. All image assets (icon, tile,
   marquee, and screenshots) [should be provided][supplying-images]. Images should not be blurry or
   too busy. [Privacy information][dashboard-privacy] (permissions justifications, the extension's
@@ -80,23 +78,6 @@ To learn more, see [Creating a great listing page][great-listing-page].
 ### Provide great images
 
 See [Supplying Images][cws-images] for guidelines on the images you should supply to the store.
-
-### Choose your extension's category well
-
-The developer console lets you specify a category for each extension. Choose the category
-that is most appropriate:
-
-* Accessibility
-* Blogging
-* Developer Tools
-* Fun
-* News & Weather
-* Photos
-* Productivity
-* Search Tools
-* Shopping
-* Social & Communication
-* Sports
 
 [oauth2-tutorial]: /docs/extensions/mv3/tut_oauth/
 [completing-listing]: /docs/webstore/cws-dashboard-listing/
